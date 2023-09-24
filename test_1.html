@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>test_1</title>
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
     <style>
         h1{
             color: yellow;
             animation-name: anima;
-            animation-duration:1s;
-            animation-iteration-count: 5;
+            animation-duration:100s;
+            animation-iteration-count: infinite;
             animation-delay: 1s;
             position: relative;
         }
@@ -26,14 +27,17 @@
         /*}*/
 
         @keyframes anima {
-            0%,100%{
+            0%,10%,20%,30%,40%,50%,60%,70%,80%,90%,100%{
                 color: black;
                 top: 100px;
+                transform: rotate(240deg);
+
 
             }
-            50%{
+            5%,15%,25%,35%,45%,55%,65%,75%,85%,95%{
                 color: red;
                 top: 0px;
+                transform: rotate(360deg);
             }
         }
     </style>
