@@ -109,12 +109,13 @@
         let cloud = document.querySelector('.cloud');
         let e = document.createElement('div');
         let left =Math.floor(Math.random() *310);
-        let width
+        let width = Math.random() * 5;
 
 
             e.classList.add('drop');
         cloud.appendChild(e);
         e.style.left = left + 'px';
+        e.style.width = width +'px';
 
 
 
